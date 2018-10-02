@@ -4,12 +4,12 @@ urunler = {
 "b":{"goruntuleme":0},
     }
 def goruntuleme(key):
-    urunler[key]["goruntuleme"] = urunler[key]["goruntuleme"]+1
+    urunler[key]["goruntuleme"] += 1
 
     print("goruntuleme:")
     
     for key in urunler:
-           print ("Urun: %s , goruntuleme: " %key, urunler[key]["goruntuleme"])
+        print ("Urun:",key ,"goruntuleme: ", urunler[key]["goruntuleme"])
     
 def main():
     for x in urunler:
@@ -20,5 +20,6 @@ while True:
 
     x=input("urun seçin:")
     goruntuleme(x)
+
 
 #______end _urun goruntuleme sayısı_____
